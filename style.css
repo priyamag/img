@@ -1,0 +1,58 @@
+img{
+    height: 300px;
+    width: 400px;
+    border-radius: 50%;
+    transition: height 1s ease;
+
+    
+}
+img:hover{ 
+    height: 400px;
+    
+}
+
+
+.container{
+    display: grid;
+    grid-gap: 40px;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+
+}
+.monument{
+    text-align: center;
+    font-size: large;
+    
+}
+.info{
+    text-align: center;
+    font-size: medium;
+   
+}
+*{
+    margin: o;
+    padding: o;
+}
+p{
+    text-align: center;
+}
+@media only screen and (max-width:600px)
+{
+    .carditem{
+        grid-template-columns: 1fr;
+    }
+}  
+@media only screen and (max-width:992px)
+{
+    .carditem{
+        grid-template-columns: 1fr 1fr;
+    }
+}     
+@media only screen and (max-width:1200px)
+{
+    .carditem{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
